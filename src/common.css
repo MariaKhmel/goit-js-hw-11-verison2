@@ -17,3 +17,28 @@ img {
     height: auto;
 }
 
+
+.search-form{
+    background-color: blue;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.form-container {
+    width: 300px;
+margin-right: auto;
+    margin-left: auto;
+}
+
+.gallery{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.photo-card {
+    flex-basis: calc((100% - 20px) / 3);
+   
+}
