@@ -42,3 +42,10 @@ margin-right: auto;
     flex-basis: calc((100% - 20px) / 3);
    
 }
+
+.loadmore-button{
+    width: 100px;
+   margin : 0 auto;
+   background-color: wheat ;
+   border: 1px solid black ;
+}
