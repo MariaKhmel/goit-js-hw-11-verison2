@@ -24,8 +24,7 @@ async function onFormSubmit(e) {
   page = 1;
    photoToSearch = e.target.elements.searchQuery.value;
   photosArray = await fetchImages(photoToSearch, page);
-  refs.input.value = '';
-    if (photosArray.hits.length ===0) {
+  if (photosArray.hits.length ===0) {
        return Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.");
   }
   refs.loadMoreButton.removeAttribute('hidden');

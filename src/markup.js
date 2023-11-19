@@ -1,7 +1,8 @@
 export default function createmarkUp(photosArray) {
-    return photosArray.hits.map(photo => {
-        const { webformatURL, largeImageURL, tags, likes, views, comments, downloads } = photo;
-        return `
+  return photosArray.hits.map(photo => {
+  
+    const { webformatURL, largeImageURL, tags, likes, views, comments, downloads } = photo
+    return `
             <div class="photo-card">
   <a href="${largeImageURL}"><img src="${webformatURL}" alt="${tags}" loading="lazy" /></a>
   <div class="info">
@@ -22,7 +23,5 @@ export default function createmarkUp(photosArray) {
       <b>${downloads}</b>
     </p>
   </div>
-</div>
-            `;
-    }).join();
+</div>  `}).join('');
 }
